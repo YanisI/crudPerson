@@ -51,8 +51,8 @@ public class PersonService {
                 "Person with id " + personId + " does not exist"
         ));
         if(name != null && name.length() > 0 &&
-                !Objects.equals(person.getName(),name)) {
-            person.setName(name);
+                !Objects.equals(person.getUsername(),name)) {
+            person.setUsername(name);
         }
         if(email != null && email.length() > 0 &&
                 !Objects.equals(person.getEmail(),email)) {

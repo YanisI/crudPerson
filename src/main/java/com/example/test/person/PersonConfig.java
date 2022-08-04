@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.Date;
 import java.util.List;
 
 @Configuration
@@ -15,6 +16,7 @@ public class PersonConfig {
     CommandLineRunner commandLineRunner(PersonRepository repository){
         return args -> {
             Person mariam = new Person(
+                    "mariamM",
                 "Mariam",
                 "Machin",
                 "pssword",
@@ -24,6 +26,7 @@ public class PersonConfig {
             );
 
             Person alex = new Person(
+                    "alex27",
                     "Alex",
                     "Truc",
                     "password",
